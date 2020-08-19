@@ -2,29 +2,27 @@
 layout: default
 robots: noindex
 ---
-  <ul class="timeline">
-    
+  <h2>Services</h2>
+  <div class="timeline">
     {% for project in site.data.projects %}
-
-      <li class="timeline-inverted">
-        <div class="timeline-image">
+      <div class="timeline-inverted clearfix" style="margin-top: 3.2rem;">
+        <div class="timeline-image" style="float: right;">
           <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
         </div>
         <div class="timeline-panel">
           <div class="timeline-heading">
-            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
+            <h4>{{ project.name }}</h4>
           </div>
           <div class="timeline-body">
             {{ project.desc | markdownify }}
-            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
-              <div style="height: 10px;"></div>
           </div>
         </div>
-      </li>
+      </div>
+      <div></div>
     {% endfor %}
-  </ul>
+    </div>
 
-  <div style="margin-top: 5rem;">
+  <div style="margin-top: 5rem; margin-bottom: 5rem;">
     <a href="https://forms.gle/dHyRLMV7GzEP4kLg7" style="background: #102F4B; color: white; padding: 1em 1.5em; font-size: 1.3rem;">
       <i class="far fa-address-card"></i>&nbsp;
       Contact us for a quote
