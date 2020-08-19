@@ -2,9 +2,6 @@
 layout: default
 robots: noindex
 ---
-
-<!--<div class="main-post-list">-->
-
   <ul class="timeline">
     
     {% for project in site.data.projects %}
@@ -20,21 +17,16 @@ robots: noindex
           <div class="timeline-body">
             {{ project.desc | markdownify }}
             <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers">...</span></a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
               <div style="height: 10px;"></div>
           </div>
         </div>
       </li>
     {% endfor %}
-    <!--
-    <li class="timeline-inverted">
-      <div class="timeline-image">
-        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
-      </div>
-    </li> -->
   </ul>
 
-<!--</div>-->
-
+  <div style="margin-top: 5rem;">
+    <a href="#" style="background: #102F4B; color: white; padding: 1em 1.5em; font-size: 1.3rem;">
+      <i class="far fa-address-card"></i>&nbsp;
+      Contact us for a quote
+    </a>
+  </div>
