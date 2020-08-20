@@ -334,3 +334,16 @@ ul {
   display: table;
   clear: both;
 }
+
+.button {
+  background: #102F4B;
+  color: white;
+  padding: 1em 1.5em;
+  font-size: 1.3rem;
+}
+
+a.button:hover {
+  color: white;
+  background: #65a1d8;
+  box-shadow: 0 0 1px 5px rgba(0,0,0,0.15);
+}
