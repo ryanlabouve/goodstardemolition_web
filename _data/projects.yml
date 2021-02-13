@@ -2,17 +2,17 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 - name: Structural demolition
-  img: https://gifcannon.s3.us-west-2.amazonaws.com/goodstar/structural-demo.jpg
-  desc: Dropping and removing large standing structures from site
+  img: https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/117420061_764324074380476_6801864537474287049_n.jpg?_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=108&_nc_ohc=4OhVMolqxEUAX_AVXKT&tp=1&oh=193925407a21d9a486ae0ee1715c3c8e&oe=60520A23
+  desc: Dropping and removal of large standing structures, walls, or fixtures from site
 
 - name: Selective demolition
-  img: https://gifcannon.s3.us-west-2.amazonaws.com/goodstar/selective-demo.jpg
-  desc: Removing material (e.g. concrete) to enable interior renovations
+  img: https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/126520465_887017052062927_4855418693396487787_n.jpg?_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=107&_nc_ohc=u-CbyfOovIgAX8FDfZO&tp=1&oh=fc40a3a281760247fc6491c2983708ab&oe=6050972A
+  desc: Material removal (e.g. concrete) for interior renovations
 
-- name: Land excavation
-  img: https://gifcannon.s3.us-west-2.amazonaws.com/goodstar/land-excavation.jpg
-  desc: Removing foliage from open land
+- name: Land excavation and tree cleanup
+  img: /images/chainsaw.jpg
+  desc: Downed trees, broken branches, and brush removal.
 
 - name: Disaster recovery
-  img: https://gifcannon.s3.us-west-2.amazonaws.com/goodstar/disaster-recovery.jpg
-  desc: When storms come a knocking, we come a rocking
+  img: /images/wall.jpg
+  desc: When troubles come a knockin', we come a rockin'.

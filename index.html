@@ -2,25 +2,18 @@
 layout: default
 robots: noindex
 ---
-  <h2 style="padding-left: 1rem; padding-right: 1rem;">Services</h2>
-  <div class="timeline" style="padding-left: 1rem; padding-right: 1rem;">
+  <h2 style="margin-bottom: 4rem; text-align: center; padding-left: 1rem; padding-right: 1rem;">Demolition and Disaster Recovery for&nbsp;the&nbsp;OKC&nbsp;Metro</h2>
+
+  <div class="" style="display: grid; grid-template-columns: 1fr 1fr; grid-row-gap: 4rem; grid-column-gap: 4rem;">
     {% for project in site.data.projects %}
-      <div class="timeline-inverted clearfix" style="margin-top: 3.2rem;">
-        <div class="timeline-image" style="float: right;">
-          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4>{{ project.name }}</h4>
-          </div>
-          <div class="timeline-body">
-            {{ project.desc | markdownify }}
-          </div>
-        </div>
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img class="" style="margin-bottom: 0.5rem; object-fit: cover; height: 276px; width: 420px; border-radius: 3px;" src="{{ project.img | prepend: site.baseurl }}" alt="" />
+
+        <h4 style="margin-bottom: 0px; padding-bottom: 0px;">{{ project.name }}</h4>
+        {{ project.desc | markdownify }}
       </div>
-      <div></div>
     {% endfor %}
-    </div>
+  </div>
 
   <div style="margin-top: 5rem; margin-bottom: 5rem; padding-left: 1rem; padding-right: 1rem;">
     <a href="https://forms.gle/dHyRLMV7GzEP4kLg7" class="button">
