@@ -4,7 +4,7 @@ robots: noindex
 ---
   <h2 style="margin-bottom: 4rem; text-align: center; padding-left: 1rem; padding-right: 1rem;">Demolition and Disaster Recovery for&nbsp;the&nbsp;OKC&nbsp;Metro</h2>
 
-  <div class="" style="display: grid; grid-template-columns: 1fr 1fr; grid-row-gap: 4rem; grid-column-gap: 4rem;">
+  <div class="services-grid" style="">
     {% for project in site.data.projects %}
       <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
         <img class="" style="margin-bottom: 0.5rem; object-fit: cover; height: 276px; width: 420px; border-radius: 3px;" src="{{ project.img | prepend: site.baseurl }}" alt="" />
@@ -15,7 +15,21 @@ robots: noindex
     {% endfor %}
   </div>
 
-  <div style="margin-top: 5rem; margin-bottom: 5rem; padding-left: 1rem; padding-right: 1rem;">
+  <div style="margin-top: 5rem; margin-bottom: 5rem; padding-left: 1rem; padding-right: 1rem; display: flex; justify-content: center;">
+    <a href="https://forms.gle/dHyRLMV7GzEP4kLg7" class="button">
+      <i class="far fa-address-card"></i>&nbsp;
+      Contact us for a quote
+    </a>
+  </div>
+
+  <div style="display: flex; flex-direction: column; margin-bottom: 4rem;">
+    <img style="margin: 0 auto; border-radius: 3px; width: 590px; height: 430px; object-fit: cover;" src="https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/122788493_104744958105396_306654336005960997_n.jpg?_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_ohc=jUkEUorIFEEAX-WjkEG&tp=1&oh=69235cf4b9e4b9b67efc8d6f8cde4fdf&oe=60533FB4" />
+    <h2 style="margin-bottom: 1rem; text-align: center; padding-left: 1rem; padding-right: 1rem;">Our Story</h2>
+    <p style="padding: 0 2rem;">Our team's story began during the 2013 Moore Tornado. We saw entire neighborhoods disappear, and many peoples' lives and homes destroyed. We did what we could&mdash;giving out supplies, helping search the rubble for keepsakes, and clearing away debris.</p>
+    <p style="padding: 0 2rem;">From that day forward, Goodstar Demolition was born. A company that would be trained and equipped to step in the next time disaster strikes. Disaster doesn't stay away too long. From tornadoes to hurricanes to ice storms&mdash;we're there.</p>
+  </div>
+
+  <div style="margin-top: 4rem; margin-bottom: 4rem; padding-left: 1rem; padding-right: 1rem; display: flex; justify-content: center;">
     <a href="https://forms.gle/dHyRLMV7GzEP4kLg7" class="button">
       <i class="far fa-address-card"></i>&nbsp;
       Contact us for a quote

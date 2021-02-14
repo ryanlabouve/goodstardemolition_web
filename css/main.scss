@@ -347,3 +347,16 @@ a.button:hover {
   background: #65a1d8;
   box-shadow: 0 0 1px 5px rgba(0,0,0,0.15);
 }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 4rem;
+  grid-column-gap: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
