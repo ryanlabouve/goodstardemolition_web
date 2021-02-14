@@ -2,27 +2,40 @@
 layout: default
 robots: noindex
 ---
-  <h2 style="padding-left: 1rem; padding-right: 1rem;">Services</h2>
-  <div class="timeline" style="padding-left: 1rem; padding-right: 1rem;">
-    {% for project in site.data.projects %}
-      <div class="timeline-inverted clearfix" style="margin-top: 3.2rem;">
-        <div class="timeline-image" style="float: right;">
-          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4>{{ project.name }}</h4>
-          </div>
-          <div class="timeline-body">
-            {{ project.desc | markdownify }}
-          </div>
-        </div>
-      </div>
-      <div></div>
-    {% endfor %}
-    </div>
+  <h2 style="margin-bottom: 4rem; text-align: center; padding-left: 1rem; padding-right: 1rem;">Demolition and Disaster Recovery for&nbsp;the&nbsp;OKC&nbsp;Metro</h2>
 
-  <div style="margin-top: 5rem; margin-bottom: 5rem; padding-left: 1rem; padding-right: 1rem;">
+  <div class="services-grid" style="">
+    {% for project in site.data.projects %}
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img class="" style="margin-bottom: 0.5rem; object-fit: cover; height: 276px; width: 420px; border-radius: 3px;" src="{{ project.img | prepend: site.baseurl }}" alt="" />
+
+        <h4 style="margin-bottom: 0px; padding-bottom: 0px;">{{ project.name }}</h4>
+        {{ project.desc | markdownify }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <p style="margin: 2rem 0;
+font-size: 24px;
+background-color: #3c5bff0a;
+padding: 4rem 3rem;
+border-radius: 13px;">“We were so pleased when Dan, Tyler and their crews came out and cleaned the horribly broken trees that were damaged during the historic ice storm in Oklahoma City. We live in a community that is 35+ years old with giant trees&mdash;so they had their work cut out for them.”</p>
+
+  <div style="margin-top: 5rem; margin-bottom: 5rem; padding-left: 1rem; padding-right: 1rem; display: flex; justify-content: center;">
+    <a href="https://forms.gle/dHyRLMV7GzEP4kLg7" class="button">
+      <i class="far fa-address-card"></i>&nbsp;
+      Contact us for a quote
+    </a>
+  </div>
+
+  <div style="display: flex; flex-direction: column; margin-bottom: 4rem;">
+    <img style="margin: 0 auto; border-radius: 3px; width: 590px; height: 430px; object-fit: cover;" src="https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/122788493_104744958105396_306654336005960997_n.jpg?_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=100&_nc_ohc=jUkEUorIFEEAX-WjkEG&tp=1&oh=69235cf4b9e4b9b67efc8d6f8cde4fdf&oe=60533FB4" />
+    <h2 style="margin-bottom: 1rem; text-align: center; padding-left: 1rem; padding-right: 1rem;">Our Story</h2>
+    <p style="padding: 0 2rem;">Our team's story began during the 2013 Moore Tornado. We saw entire neighborhoods disappear, and many peoples' lives and homes destroyed. We did what we could&mdash;giving out supplies, helping search the rubble for keepsakes, and clearing away debris.</p>
+    <p style="padding: 0 2rem;">From that day forward, Goodstar Demolition was born. A company that would be trained and equipped to step in the next time disaster strikes. Disaster doesn't stay away too long. From tornadoes to hurricanes to ice storms&mdash;we're there.</p>
+  </div>
+
+  <div style="margin-top: 4rem; margin-bottom: 4rem; padding-left: 1rem; padding-right: 1rem; display: flex; justify-content: center;">
     <a href="https://forms.gle/dHyRLMV7GzEP4kLg7" class="button">
       <i class="far fa-address-card"></i>&nbsp;
       Contact us for a quote
